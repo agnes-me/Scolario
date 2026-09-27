@@ -1,0 +1,14 @@
+services:
+  scolario:
+    build: .
+    container_name: scolario
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      TZ: Europe/Paris

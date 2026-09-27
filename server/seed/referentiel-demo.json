@@ -1,0 +1,85 @@
+{
+  "_commentaire": "Échantillon de démonstration. Il est désactivé automatiquement dès la première synchronisation Notion réussie, qui importe le référentiel complet (≈180 notions, ≈410 exercices).",
+  "notions": [
+    {
+      "id": "demo-passe-simple-cm2",
+      "matiere": "francais", "niveau": "CM2", "cycle": "Cycle 3",
+      "domaine": "Grammaire et orthographe", "sous_domaine": "Conjugaison",
+      "titre": "Passé simple",
+      "libelle_officiel": "être, avoir, 1er et 2e groupes, 8 irréguliers",
+      "statut_type": "Memorisation", "source_bo": "BO n°16 du 17/04/2025", "millesime": "2025", "en_vigueur_depuis": "2026-09",
+      "cours": "## Fiche de cours\nTemps du récit et de l'écrit littéraire, peu utilisé à l'oral. Terminaisons pour les verbes en -er : -ai, -as, -a, -âmes, -âtes, -èrent (il chant**a**, ils chant**èrent**).\n\nPour les autres verbes, terminaisons -is/-us + accent circonflexe à nous/vous : il fin**it**, il v**it** (voir), il v**oulut**, il pr**it**.\n\nÊtre : il **fut** / Avoir : il **eut**.\n\n**À retenir en priorité pour la lecture** : reconnaître la 3e personne du singulier et du pluriel, formes les plus fréquentes dans les textes.",
+      "exercices": [
+        { "id": "demo-ps-1", "titre": "Passé simple - chanter", "type": "Conjugaison a trous", "enonce": "Conjugue au passé simple : Ils ___ (chanter) toute la nuit.", "reponse": "chantèrent", "difficulte": "Facile" },
+        { "id": "demo-ps-2", "titre": "Passé simple - être QCM", "type": "QCM", "enonce": "Choisis la bonne forme : Le roi ___ (être) très surpris.", "options": ["a) fut", "b) fût", "c) était", "d) fus"], "reponse": "a) fut", "difficulte": "Standard" },
+        { "id": "demo-ps-3", "titre": "Passé simple - prendre", "type": "Texte a trous", "enonce": "Conjugue au passé simple : Elle ___ (prendre) son manteau et sortit.", "reponse": "prit", "difficulte": "Renforcement" }
+      ]
+    },
+    {
+      "id": "demo-subjonctif-5e",
+      "matiere": "francais", "niveau": "5e", "cycle": "Cycle 4",
+      "domaine": "Grammaire et orthographe", "sous_domaine": "Conjugaison",
+      "titre": "Subjonctif présent",
+      "libelle_officiel": "Employer et identifier le subjonctif présent à l'écrit et à l'oral",
+      "statut_type": "Introduction", "source_bo": "BO n°10 du 5/03/2026", "millesime": "2026", "en_vigueur_depuis": "2026-09",
+      "cours": "## Fiche de cours\n**Formation** : radical de la 3e personne du pluriel du présent + terminaisons -e, -es, -e, -ions, -iez, -ent.\n\nExemple : que je chant**e**, que tu chant**es**, qu'il chant**e**, que nous chant**ions**, que vous chant**iez**, qu'ils chant**ent**.\n\nÊtre : que je **sois** / Avoir : que j'**aie**.\n\n**Usage** : s'emploie après *que*, pour exprimer un souhait, une obligation, un doute (« il faut que tu **viennes** », « je veux qu'il **soit** là »).",
+      "exercices": [
+        { "id": "demo-subj-1", "titre": "Subjonctif present - trou 1", "type": "Texte a trous", "enonce": "Conjugue au subjonctif présent : Il faut que tu ___ (venir) demain.", "reponse": "viennes", "difficulte": "Standard" },
+        { "id": "demo-subj-2", "titre": "Subjonctif present - QCM etre", "type": "QCM", "enonce": "Choisis la bonne forme : Je veux qu'il ___ (être) là.", "options": ["a) soit", "b) est", "c) sois", "d) était"], "reponse": "a) soit", "difficulte": "Standard" }
+      ]
+    },
+    {
+      "id": "demo-accord-sujet-verbe-ce1",
+      "matiere": "francais", "niveau": "CE1", "cycle": "Cycle 2",
+      "domaine": "Grammaire et orthographe", "sous_domaine": "Accords",
+      "titre": "Accord sujet-verbe",
+      "libelle_officiel": "Marquer l'accord entre le sujet et le verbe dans les situations simples",
+      "statut_type": "Introduction", "millesime": "2025",
+      "cours": "## Fiche de cours\nLe verbe **s'accorde avec son sujet**. Pour trouver le sujet, on pose la question « **Qui est-ce qui** … ? » avant le verbe.\n\n- Le chien **aboie**. → *Qui est-ce qui aboie ?* le chien (singulier)\n- Les chiens **aboient**. → sujet pluriel : terminaison **-nt**\n\n**Piège fréquent** : le sujet n'est pas toujours juste avant le verbe (« Les enfants de ma voisine **jouent** »).",
+      "exercices": [
+        { "id": "demo-asv-1", "titre": "Accord sujet-verbe - trou", "type": "Texte a trous", "enonce": "Complète : Les oiseaux ___ (chanter) dans le jardin.", "reponse": "chantent", "difficulte": "Facile" },
+        { "id": "demo-asv-2", "titre": "Accord sujet-verbe - vrai/faux", "type": "Vrai/Faux", "enonce": "Vrai ou faux : dans « Les enfants de ma voisine joue », le verbe est bien accordé.", "reponse": "Faux", "difficulte": "Standard" }
+      ]
+    },
+    {
+      "id": "demo-tables-ce1",
+      "matiere": "maths", "niveau": "CE1", "cycle": "Cycle 2",
+      "domaine": "Nombres et calculs", "sous_domaine": "Calcul mental",
+      "titre": "Tables de multiplication (2, 3, 4, 5)",
+      "libelle_officiel": "Connaître les tables de multiplication par 2, 3, 4 et 5",
+      "statut_type": "Memorisation", "millesime": "2025",
+      "cours": "## Fiche de cours\nMultiplier, c'est **additionner plusieurs fois le même nombre** : 4 × 3 = 3 + 3 + 3 + 3 = 12.\n\n| × | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|\n| 6 | 12 | 18 | 24 | 30 |\n| 7 | 14 | 21 | 28 | 35 |\n| 8 | 16 | 24 | 32 | 40 |\n| 9 | 18 | 27 | 36 | 45 |\n\n**Astuce** : 4 × 7 = 7 × 4 (on peut inverser l'ordre).",
+      "exercices": [
+        { "id": "demo-tab-1", "titre": "Table de 4", "type": "Calcul", "enonce": "Calcule : 4 × 7 = ?", "reponse": "28", "difficulte": "Facile" },
+        { "id": "demo-tab-2", "titre": "Table de 3", "type": "Calcul", "enonce": "Calcule : 3 × 8 = ?", "reponse": "24", "difficulte": "Standard" },
+        { "id": "demo-tab-3", "titre": "Table de 5 - QCM", "type": "QCM", "enonce": "Combien font 5 × 9 ?", "options": ["a) 40", "b) 45", "c) 54", "d) 35"], "reponse": "b) 45", "difficulte": "Facile" }
+      ]
+    },
+    {
+      "id": "demo-proportionnalite-cm2",
+      "matiere": "maths", "niveau": "CM2", "cycle": "Cycle 3",
+      "domaine": "Nombres et calculs", "sous_domaine": "Proportionnalité",
+      "titre": "Proportionnalité",
+      "libelle_officiel": "Résoudre des problèmes relevant de la proportionnalité",
+      "statut_type": "Introduction", "millesime": "2025",
+      "cours": "## Fiche de cours\nDeux grandeurs sont **proportionnelles** si l'on passe de l'une à l'autre en multipliant toujours par le **même nombre** (le coefficient).\n\n**Méthode du retour à l'unité** : 3 cahiers coûtent 6 €. 1 cahier coûte 6 ÷ 3 = 2 €. 5 cahiers coûtent 5 × 2 = 10 €.\n\n**Piège fréquent** : l'âge et la taille ne sont pas proportionnels !",
+      "exercices": [
+        { "id": "demo-prop-1", "titre": "Proportionnalité - cahiers", "type": "Calcul", "enonce": "3 cahiers coûtent 6 €. Combien coûtent 7 cahiers (en €) ?", "reponse": "14", "difficulte": "Standard" },
+        { "id": "demo-prop-2", "titre": "Proportionnalité - vrai/faux", "type": "Vrai/Faux", "enonce": "Vrai ou faux : la taille d'un enfant est proportionnelle à son âge.", "reponse": "Faux", "difficulte": "Facile" }
+      ]
+    },
+    {
+      "id": "demo-anglais-couleurs-cp",
+      "matiere": "anglais", "niveau": "CP", "cycle": "Cycle 2",
+      "domaine": "Lexique", "sous_domaine": "Couleurs",
+      "titre": "Les couleurs",
+      "libelle_officiel": "Connaître le lexique des couleurs",
+      "statut_type": "Introduction", "millesime": "2025",
+      "cours": "## Fiche de cours\n- red = rouge\n- blue = bleu\n- green = vert\n- yellow = jaune\n- black = noir\n- white = blanc",
+      "exercices": [
+        { "id": "demo-col-1", "titre": "Couleurs - traduction", "type": "Reponse courte", "enonce": "Comment dit-on « vert » en anglais ?", "reponse": "green", "difficulte": "Facile" },
+        { "id": "demo-col-2", "titre": "Couleurs - QCM", "type": "QCM", "enonce": "« Yellow » veut dire…", "options": ["a) jaune", "b) bleu", "c) rouge"], "reponse": "a) jaune", "difficulte": "Facile" }
+      ]
+    }
+  ]
+}

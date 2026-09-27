@@ -1,0 +1,11 @@
+{
+  "name": "Scolario",
+  "short_name": "Scolario",
+  "description": "Suivi de scolarité familiale",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#2f5bd3",
+  "lang": "fr",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
