@@ -61,6 +61,8 @@ Un petit **référentiel de démonstration** (6 notions, 14 exercices) est charg
 
 ## Installation sur Synology / Raspberry Pi (Docker)
 
+> **Accès depuis internet sans VPN ni port ouvert, avec mises à jour automatiques depuis GitHub** (Cloudflare Tunnel + GitHub Actions) : voir [`docs/installation-maison.md`](docs/installation-maison.md).
+>
 > **Pas de serveur à la maison ?** Hébergement gratuit sur Oracle Cloud « Always Free », avec installation automatique : voir [`docs/installation-oracle-cloud.md`](docs/installation-oracle-cloud.md).
 
 L'image est basée sur `node:22-alpine` (disponible en amd64 et arm64 : Synology Intel/AMD, Raspberry Pi 4/5 en 64 bits).
@@ -174,6 +176,8 @@ scolario/
 │   └── test/               Tests (node:test) : services, synchro Notion simulée, parcours API
 ├── client/                 Interface React (Vite), responsive, installable (PWA)
 ├── Dockerfile, docker-compose.yml
+├── .github/workflows/      CI/CD : tests + image Docker multi-architecture (ghcr.io)
+├── deploy/maison/          Déploiement NAS / Raspberry Pi (Cloudflare Tunnel, mises à jour auto)
 ├── deploy/oracle/          Script d'installation automatique (Oracle Cloud)
 └── docs/                   Guide d'utilisation, installation Oracle Cloud
 ```

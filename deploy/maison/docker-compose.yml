@@ -1,0 +1,33 @@
+# Déploiement à la maison (Synology avec Container Manager, ou Raspberry Pi 64 bits).
+# - scolario    : l'application, image construite par GitHub Actions
+# - cloudflared : tunnel Cloudflare sortant → accès depuis internet en HTTPS,
+#                 sans ouvrir de port sur la box ni exposer l'adresse IP de la maison
+# Réglages dans le fichier .env à côté de ce fichier (voir .env.example).
+services:
+  scolario:
+    image: ghcr.io/agnes-me/scolario:${SCOLARIO_TAG:-latest}
+    container_name: scolario
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    environment:
+      TZ: Europe/Paris
+      COOKIE_SECURE: "true"
+      TRUST_PROXY: "1"
+      NOTION_TOKEN: ${NOTION_TOKEN:-}
+      NOTION_SYNC_INTERVAL_HOURS: ${NOTION_SYNC_INTERVAL_HOURS:-24}
+    # Aucun port publié : l'application n'est joignable que via le tunnel.
+    networks: [interne]
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    depends_on: [scolario]
+    networks: [interne]
+
+networks:
+  interne:
