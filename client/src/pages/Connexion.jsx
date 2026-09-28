@@ -47,6 +47,7 @@ export default function Connexion() {
         <Field label="Mot de passe" aide={mode === 'inscription' ? '8 caractères minimum' : null}>
           <input name="password" type="password" required minLength={mode === 'inscription' ? 8 : undefined} autoComplete={mode === 'inscription' ? 'new-password' : 'current-password'} />
         </Field>
+        {mode === 'inscription' && status.codeInvitationRequis && <Field label="Code d’invitation" aide="Fourni par la personne qui a installé l’application"><input name="code" required autoComplete="off" /></Field>}
         {mode === 'inscription' && <Field label="Confirmer le mot de passe"><input name="password2" type="password" required minLength={8} autoComplete="new-password" /></Field>}
         {erreur && <div className="alert alert-erreur">{erreur}</div>}
         <button className="btn btn-primaire btn-bloc" disabled={envoi}>{mode === 'inscription' ? 'Créer le foyer' : 'Se connecter'}</button>

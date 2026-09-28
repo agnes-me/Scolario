@@ -29,6 +29,18 @@ function agent() {
   };
 }
 
+test('code d’invitation exigé si CODE_INVITATION est défini', async () => {
+  process.env.CODE_INVITATION = 'secret-test';
+  try {
+    const a = agent();
+    assert.equal((await a('GET', '/auth/status')).body.codeInvitationRequis, true);
+    const r = await a('POST', '/auth/register', { nom: 'X', email: 'x@y.fr', password: 'motdepasse1', code: 'faux' });
+    assert.equal(r.status, 400);
+  } finally {
+    delete process.env.CODE_INVITATION;
+  }
+});
+
 test('parcours complet : foyer, enfant, tests, points, export, cloisonnement', async () => {
   const a = agent();
   let r = await a('GET', '/auth/status');

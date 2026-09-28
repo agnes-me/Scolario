@@ -28,12 +28,15 @@ export default function authRoutes(db) {
       adulte: req.adulte || null,
       foyer: foyer ? { id: foyer.id, nom: foyer.nom, options: { ...OPTIONS_DEFAUT, ...JSON.parse(foyer.options_json) } } : null,
       inscriptionOuverte: inscriptionOuverte(db),
+      codeInvitationRequis: Boolean(process.env.CODE_INVITATION),
     });
   });
 
   r.post('/auth/register', (req, res) => {
     if (!inscriptionOuverte(db)) throw bad('Les inscriptions sont fermées : demandez à un adulte du foyer de vous créer un compte.');
-    const { foyer, nom, email, password } = req.body || {};
+    const { foyer, nom, email, password, code } = req.body || {};
+    // Instance exposée sur internet : la création d'un foyer peut exiger un code d'invitation.
+    if (process.env.CODE_INVITATION && String(code || '').trim() !== process.env.CODE_INVITATION) throw bad('Code d’invitation incorrect');
     validerCompte({ nom, email, password });
     if (get(db, 'SELECT 1 FROM adulte WHERE email = ?', email)) throw bad('Cet identifiant est déjà utilisé');
     const adulteId = tx(db, () => {
